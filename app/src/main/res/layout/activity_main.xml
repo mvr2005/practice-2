@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/tx1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etx1"
+        android:inputType="text|textLongMessage"
+        app:layout_constraintEnd_toEndOf="@+id/tx1"
+        app:layout_constraintStart_toStartOf="@+id/tx1"
+        app:layout_constraintTop_toBottomOf="@+id/tx1"
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/bt1"
+        app:layout_constraintEnd_toEndOf="@+id/etx2"
+        app:layout_constraintStart_toStartOf="@+id/etx2"
+        app:layout_constraintTop_toBottomOf="@+id/etx2" />
+
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/etx2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etx2"
+        app:layout_constraintTop_toBottomOf="@+id/etx2" />
+
+    <EditText
+        android:id="@+id/etx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etx2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etx1"
+        app:layout_constraintStart_toStartOf="@+id/etx1"
+        app:layout_constraintTop_toBottomOf="@+id/etx1"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
