@@ -38,9 +38,13 @@ class MainActivity : AppCompatActivity() {
                     if (bindingClass.etx2.text.toString() == Constance.BOSS_PASSWORD) {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = textResult
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_boss)
                     } else {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = "Неверный код"
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_fac)
                     }
                 }
                 Constance.INGENER -> {
@@ -48,9 +52,13 @@ class MainActivity : AppCompatActivity() {
                     if (bindingClass.etx2.text.toString() == Constance.INGENER_PASSWORD) {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = textResult
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_ingener)
                     } else {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = "Неверный код"
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_fac)
                     }
                 }
                 Constance.CLINING -> {
@@ -58,14 +66,20 @@ class MainActivity : AppCompatActivity() {
                     if (bindingClass.etx2.text.toString() == Constance.CLINING_PASSWORD) {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = textResult
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_clinig)
                     } else {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = "Неверный код"
+                        bindingClass.im1.visibility = View.VISIBLE
+                        bindingClass.im1.setImageResource(R.drawable.ic_fac)
                     }
                 }
                 else ->{
                     bindingClass.tx2.visibility = View.VISIBLE
                     bindingClass.tx2.text = "вас нет в списке"
+                    bindingClass.im1.visibility = View.VISIBLE
+                    bindingClass.im1.setImageResource(R.drawable.ic_fac)
                 }
             }
         }
