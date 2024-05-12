@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">practice-2</string>
-    <string name="tx1">Введите имя</string>
-    <string name="etx1">ИМЯ</string>
-    <string name="etx2">ВВЕДИТЕ КОД</string>
-    <string name="bt1">узнать зарплату</string>
+    <string name="tx1">enter a name</string>
+    <string name="etx1">name</string>
+    <string name="etx2">enter a code</string>
+    <string name="bt1">show salary</string>
 </resources>
