@@ -61,13 +61,13 @@ class MainActivity : AppCompatActivity() {
                         bindingClass.im1.setImageResource(R.drawable.ic_fac)
                     }
                 }
-                Constance.CLINING -> {
-                    val textResult = "ваша зп ${Constance.CLINING_SALARY}"
-                    if (bindingClass.etx2.text.toString() == Constance.CLINING_PASSWORD) {
+                Constance.CLEANER -> {
+                    val textResult = "ваша зп ${Constance.CLEANER_SALARY}"
+                    if (bindingClass.etx2.text.toString() == Constance.CLEANER_PASSWORD) {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = textResult
                         bindingClass.im1.visibility = View.VISIBLE
-                        bindingClass.im1.setImageResource(R.drawable.ic_clinig)
+                        bindingClass.im1.setImageResource(R.drawable.ic_cleaner)
                     } else {
                         bindingClass.tx2.visibility = View.VISIBLE
                         bindingClass.tx2.text = "Неверный код"

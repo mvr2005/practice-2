@@ -11,12 +11,13 @@
         android:id="@+id/tx1"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/tx1"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
@@ -25,7 +26,7 @@
         android:id="@+id/etx1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/etx1"
@@ -37,30 +38,29 @@
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="0dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="12dp"
         android:text="@string/bt1"
-        app:layout_constraintEnd_toEndOf="@+id/etx2"
-        app:layout_constraintStart_toStartOf="@+id/etx2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etx2" />
 
     <TextView
         android:id="@+id/tx2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/etx2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/etx2"
-        app:layout_constraintTop_toBottomOf="@+id/etx2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etx2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/etx2"
@@ -73,12 +73,13 @@
 
     <ImageView
         android:id="@+id/im1"
-        android:layout_width="105dp"
-        android:layout_height="111dp"
+        android:layout_width="102dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="8dp"
         android:importantForAccessibility="no"
         android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="@+id/bt1"
-        app:layout_constraintStart_toStartOf="@+id/bt1"
-        app:layout_constraintTop_toBottomOf="@+id/bt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etx2"
+        app:layout_constraintTop_toBottomOf="@+id/tx2"
         app:srcCompat="@drawable/ic_boss" />
 </androidx.constraintlayout.widget.ConstraintLayout>
